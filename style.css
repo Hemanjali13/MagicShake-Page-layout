@@ -7,10 +7,11 @@
 body{
     min-height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 .header{
     width: 14%;
-    height: 150vh;
+    height: 100vh;
 }
 .side-bar{
     border: 1px solid lightgray;
@@ -41,6 +42,10 @@ body{
 .nav-links li{
     padding: 10px 0;
 }
+.element{
+    background: yellow;
+}
+
 .nav-links li a{
     color: black;
     text-decoration: none;
@@ -76,8 +81,8 @@ body{
 .page-header{
     padding: 1.3rem 1rem;
     margin-left: 157px;
-    margin-top: -950px;
-    width: calc(85% - 200px);
+    margin-top: -630px;
+    width: calc(120% - 200px);
     background: #FFFFFF;
     border: 2px solid lightgray;
 }
@@ -85,7 +90,7 @@ body{
     font-size: 19px;
 }
 .page-header .flower a{
-     padding: 9px 9.5px;
+     padding: 9px 49px;
  }
 .flower a{
     font-size: 14px;
@@ -93,13 +98,6 @@ body{
     text-decoration: none;
 }
 .flower a:hover{
-    background-color: yellow;
-}
-.flower select{
-    font-size: 15px;
-    color: black;
-}
-.flower select:hover{
     background-color: yellow;
 }
 .analytics{
@@ -267,14 +265,16 @@ body{
 }
 .slo{
     margin-top: -30px;
-    margin-left: 224px;
-    font-size: 15px;
+    margin-left: 225px;
+    border: 1px solid black;
     background: yellow;
+    font-size: 17px;
     width: 97px;
     height: 31px;
 }
 .c{
-    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 19px;
 }
 .cards{
     margin: 10px;
@@ -283,8 +283,8 @@ body{
     background: #FFFFFF;
     text-align: center;
     border-radius: 10px;
-    margin-top: -495px;
-    margin-left: -900px;
+    margin-top: 100px;
+    margin-left: -5px;
     padding: 10px;
     box-shadow: 0 25px 35px rgb(0, 0, 0, 0.1);
 }
@@ -427,20 +427,35 @@ body{
 }
 .slow{
     margin-top: -30px;
-    margin-left: 240px;
-    font-size: 15px;
+    margin-left: 235px;
+    border: 1px solid black;
     background: yellow;
+    font-size: 17px;
     width: 97px;
     height: 31px;
 }
+.cd{
+    margin-top: 5px;
+    margin-left: 15px;
+}
+/*Card-wrapper*/
+.card-wrapper{
+    max-width: 120%;
+    max-height: 530px;
+    overflow-y: scroll;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.card-wrapper::-webkit-scrollbar {
+    display: none;
+  }
 .Card{
-    width: 220px;
-    height: 100vh;
+    width: 270px;
+    height: 70vh;
     background: #FFFFFF;
     text-align: center;
     border-radius: 10px;
-    margin-top: -388px;
-    margin-left: 882.4px;
+    margin-top: -110px;
+    margin-left: 9px;
     padding: 10px;
     box-shadow: 0 25px 35px rgb(0, 0, 0, 0.1);
 }
@@ -449,7 +464,8 @@ body{
     margin-left: 30px;
 }
 .logo button{
-    width: 130px;
+    width: 140px;
+    margin-right: 20px;
     margin-top: 10px;
     background: black;
     color: white;
@@ -457,17 +473,17 @@ body{
 .logo h2{
     margin: 10px;
     font-size: 19px;
-    margin-right: 20px;
+    margin-right: 70px;
 }
 .logo img{
-    margin-right: 10px;
+    margin-left: -49px;
 }
 .Card-form .letter{
     display: flex;
     flex-direction: row;
 }
 .letter img{
-    margin-left: 30px;
+    margin-left: 49px;
     margin-right: 5px;
     height: 16px;
 }
@@ -494,7 +510,7 @@ body{
     margin-top: 10px;
     width: 175px;
     height: 30px;
-    margin-left: -20px;
+    margin-left: -10px;
     font-size: 12px;
     background: lightgray;
     border: 1px solid whitesmoke;
@@ -515,25 +531,25 @@ body{
     margin-top: 10px;
     width: 175px;
     height: 30px;
-    margin-left: -20px;
+    margin-left: -10px;
     font-size: 12px;
     background: lightgray;
     border: 1px solid whitesmoke;
 }
 .Cards{
     margin: 10px;
-    width: 220px;
-    height: 100vh;
+    width: 270px;
+    height: 50vh;
     background: #FFFFFF;
     text-align: center;
     border-radius: 10px;
-    margin-left: -10px;
     padding: 10px;
-    margin-top: 50px;
+    margin-left: -302px;
+    margin-top: 300px;
     box-shadow: 0 25px 35px rgb(0, 0, 0, 0.1);
 }
 .Cards-page p{
-    margin-right: 65px;
+    margin-right: 115px;
     font-size: 15px;
 }
 .Queries .ppls{
@@ -546,11 +562,11 @@ body{
     margin-left: 20px;
 }
 .ppls img{
-    margin-left: 15px;
+    margin-left: 25px;
 }
 p{
     font-size: 10px;
-    margin-right: 40px; 
+    margin-right: 57px; 
 }
 .Queries .contact{
     display: flex;
@@ -558,7 +574,7 @@ p{
     margin-top: 30px;
 }
 .contact img{
-    margin-left: 15px;
+    margin-left: 25px;
 }
 .contact h2{
     font-size: 15px;
@@ -575,10 +591,10 @@ p{
 }
 .ig p{
     font-size: 10px;
-    margin-left: 50px;
+    margin-left: 56px;
 }
 .id img{
-    margin-left: 15px;
+    margin-left: 24px;
 }
 /*Right Side*/
 .side{
